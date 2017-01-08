@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+/* ============================== */
+
+input[type=range].widget {
+    /*float: left;*/
+    box-shadow: inset 0 2px 5px rgba(0,0,0,.1);
+    -webkit-appearance: none;
+    background-color: #fff;
+    width: 400px;
+    max-width: 100%;
+    height: 24px;
+    border: 1px solid #999;
+    border-radius: 12px;
+    outline: none;
+}
+
+input[type="range"].widget::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-color: #049bfd;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    border-radius: 12px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+    z-index: 2147483647;
+}
+
+input[type="range"].widget:before {
+    z-index: 2147483646;
+    content: '';
+    display: block;
+    width: 0;
+    height: 22px;
+    position: absolute;
+    margin: 1px;
+    background: rgba(4, 155, 255, 0.25);
+    border-radius: 12px 0 0 12px;
+}
+input[type="range"].widget.rounded:before {
+    border-radius: 12px;
+}
+
+/* ============================== */
+
+.github-fork, .github-fork:hover, .github-fork:focus {
+    text-decoration: none;
+    font: bold 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 200px;
+    padding: 5px 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-width: 2px 0;
+    border-style: dotted;
+    border-color: #fff;
+    border-color: rgba(255, 255, 255, 0.7);
+    background: #b00;
+    z-index: 2147483647;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 45px;
+    right: -45px;
+}
+
+
+.hidden {
+    display: none !important;
+}
+.tight {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.tight-top {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+.tight-bottom {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+a {
+    color: #268bd2;
+    text-decoration: none;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+}
+a strong {
+    color: inherit
+}
+a:hover, a:focus {
+    text-decoration: underline
+}
+
+body {
+    font: 300 18px/1.4 Lato, helvetica, arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    background: #f5f5f5;
+    color: #454545;
+    text-shadow: 0 1px 1px #fff;
+    margin: 2rem 1rem;
+    letter-spacing: -0.002rem;
+}
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    background: #fff;
+    height: 1px;
+    margin: 2rem 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+    font-weight: 700;
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: -0.1rem;
+}
+h2 {
+    font-weight: 400;
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    letter-spacing: -0.05rem;
+}
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 1rem 0 0;
+    font-size: .9rem;
+    letter-spacing: 0.05rem;
+}
+
+#wrapper {
+    width: 620px;
+    max-width: 100%;
+    margin: auto;
+}
+footer {
+    margin: 3rem 0 0;
+    font-size: 64%;
+    color: #999;
+    text-align: center;
+}
+footer a {
+    color: inherit;
+}
+section {
+    margin: 2rem 0 !important;
+    text-align: center;
+    margin: auto;
+    width: 640px;
+    max-width: 100%;
+    max-width: 100%;
+    display: block
+}
+span.min, span.max {
+    line-height: 30px;
+    float: left;
+    width: 87px;
+    padding: 0 10px;
+    text-align: left;
+    font-weight: 300;
+}
+span.min {
+    text-align: right;
+}
+.slider {
+    width: auto;
+    float: left;
+}
+output {
+    text-align: center;
+    display: block;
+}
+output[for=monthly], output[for=apr] {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+output[for=monthly]:before, output#need span:before {
+    font-weight: 300;
+    content: '$ ';
+    font-size: 72%;
+    opacity: .5;
+}
+output[for=apr]:after {
+    font-weight: 300;
+    content: ' %';
+    font-size: 72%;
+    opacity: .5;
+}
+
+output#need:before {
+    content: 'TO QUIT WORK, YOU WILL NEED';
+    display: block;
+    color: #eee;
+    opacity: 1;
+    font-size: .72rem;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 2;
+}
+output#need span:before {
+    opacity: .8;
+    font-weight: 300;
+}
+output#need {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #46b24d;
+    width: 320px;
+    padding: 18px 15px 25px;
+    font-size: 3rem;
+    line-height: 1;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    font-weight: 700;
+    letter-spacing: 0;
+    display: block;
+    margin: 0 auto 10px;
+    border: 2px dotted rgba(255,255,255,.5);
+}
+output#need:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 135px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #46b24d;
+}
+
+@media only screen and (max-width: 768px) {
+    span.min, span.max {
+        display: none;
+    }
+    .slider, input[type=range].widget {
+        width: calc(100% - 2px);
+    }
+    output#need {
+        width: calc(100% - 32px);
+    }
+    body {
+        margin-top: 1rem;
+    }
+    footer {
+        margin: 0;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
